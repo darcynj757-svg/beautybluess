@@ -2,13 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://beautybluess.ru/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://beautybluess.ru/kontakty.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://beautybluess.ru/kosmetika.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://beautybluess.ru/o-kabinete.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://beautybluess.ru/rezultaty.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://beautybluess.ru/stati.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://beautybluess.ru/statya-biorevitalizaciya.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://beautybluess.ru/statya-pilingi-zimoj.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://beautybluess.ru/statya-protivopokazaniya.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://beautybluess.ru/statya-uvelichenie-gub.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://beautybluess.ru/statya-biorevitalizaciya-mezoterapiya.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://beautybluess.ru/statya-kollagen.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://beautybluess.ru/statya-konturnaya-plastika.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://beautybluess.ru/statya-lipolitiki.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://beautybluess.ru/statya-pdrn.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://beautybluess.ru/statya-plazmoterapiya.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://beautybluess.ru/statya-vypadenie-volos.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://beautybluess.ru/usluga-biorev.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://beautybluess.ru/usluga-care.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://beautybluess.ru/usluga-collagen.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>

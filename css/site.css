@@ -753,3 +753,6 @@ a.dph{display:block}
 .vw-bar{position:relative;height:1px;background:rgba(205,180,138,.2);margin-top:8px}
 .vw-bar i{position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--gold-soft);transform-origin:left;transform:scaleX(var(--prog,.1))}
 @media (max-width:640px){.vw-item{width:62vw}.vw-ctrl button{width:46px;height:46px;border-radius:14px}}
+
+/* логотип в шапке */
+.mark{display:inline-flex;align-items:center;gap:10px}.mark .mlogo{height:32px;width:auto;flex:none}
