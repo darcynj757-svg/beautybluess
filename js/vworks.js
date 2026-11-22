@@ -23,7 +23,7 @@
     /* воспроизведение: только видимые видео и только пока блок на экране */
     let secOn = false; const seen = new Map();
     const sync = () => vids.forEach((v) => {
-      const want = secOn && seen.get(v) && (!reduce || !v.muted);
+      const want = secOn && seen.get(v) && !reduce;
       if (want) { if (v.paused) { v.preload = 'auto'; const p = v.play(); if (p) p.catch(() => {}); } }
       else if (!v.paused) v.pause();
     });
@@ -33,16 +33,5 @@
       new IntersectionObserver((en) => { secOn = en[0].isIntersecting; sync(); }, { threshold: 0.12 }).observe(car);
     }
 
-    /* звук: нажатие включает звук этого видео и выключает у остальных */
-    const setSnd = (k, on) => {
-      const it = items[k], b = it.querySelector('.vw-snd'); vids[k].muted = !on; it.classList.toggle('snd', on);
-      if (b) { b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.setAttribute('aria-label', on ? 'Выключить звук' : 'Включить звук'); }
-    };
-    items.forEach((it, k) => it.addEventListener('click', () => {
-      const v = vids[k]; const on = v.muted || v.paused;
-      vids.forEach((o, j) => { if (j !== k) setSnd(j, false); });
-      setSnd(k, on);
-      if (on) { seen.set(v, true); v.preload = 'auto'; const p = v.play(); if (p) p.catch(() => {}); }
-    }));
   });
 })();

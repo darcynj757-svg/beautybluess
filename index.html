@@ -359,6 +359,15 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
 .vw-bar{position:relative;height:1px;background:rgba(205,180,138,.2);margin-top:8px}
 .vw-bar i{position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--gold-soft);transform-origin:left;transform:scaleX(var(--prog,.1))}
 @media (max-width:640px){.vw-item{width:62vw}.vw-ctrl button{width:46px;height:46px;border-radius:14px}}
+
+/* ссылки на внутренние страницы */
+.head-acts{display:flex;gap:10px;flex-wrap:wrap}
+a.more{display:inline-block;margin-top:14px;font-size:.875rem;font-weight:600;color:var(--gold);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+a.more:hover{opacity:.8}
+.works .note a{color:var(--gold-soft)}
+.fnav{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.9375rem}
+.fnav a{text-decoration:none;opacity:.85}
+.fnav a:hover{opacity:1;text-decoration:underline}
 </style>
 <script>document.documentElement.classList.add('js');setTimeout(function(){document.querySelectorAll('.hero h1,.panel,[data-fade]').forEach(function(e){e.style.visibility='visible'})},2500)</script>
 </head>
@@ -368,10 +377,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
   <div class="wrap">
     <a class="mark" href="#main" aria-label="Beauty Bluess, наверх">BEAUTY BLUESS</a>
     <nav class="nav" aria-label="Разделы">
-      <a href="#prices">Услуги и цены</a>
-      <a href="#team">Врачи</a>
-      <a href="#works">Результаты</a>
-      <a href="#contacts">Контакты</a>
+      <a href="uslugi.html">Услуги и цены</a> <a href="vrachi.html">Врачи</a> <a href="rezultaty.html">Результаты</a> <a href="stati.html">Статьи</a> <a href="o-kabinete.html">О кабинете</a> <a href="kontakty.html">Контакты</a>
     </nav>
     <a class="tel" href="tel:+79138890939">+7 (913) 889-09-39</a>
     <a class="btn btn-main" href="https://dikidi.net/583429" target="_blank" rel="noopener">Записаться</a>
@@ -419,7 +425,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
         <h2 id="prices-h" class="h2" data-split>Услуги и цены</h2>
         <p class="sub" data-fade>Откройте направление, чтобы увидеть полный прайс. Точный план и стоимость врач назовёт на консультации.</p>
       </div>
-      <a class="btn btn-ghost" href="https://dikidi.net/583429" target="_blank" rel="noopener" data-fade>Выбрать время</a>
+      <div class="head-acts" data-fade><a class="btn btn-ghost" href="uslugi.html">Все услуги и цены</a> <a class="btn btn-ghost" href="https://dikidi.net/583429" target="_blank" rel="noopener">Выбрать время</a></div>
     </div>
     <div class="price-list">
       <div class="rule" aria-hidden="true"></div>
@@ -433,13 +439,13 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>Belotero Intense Lido, 1 мл</span><b>17 000 ₽</b></li>
             <li><span>Stylage M, 1 мл</span><b>16 000 ₽</b></li>
             <li><span>Stylage M Lido, 1 мл</span><b>16 500 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-lips.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p1"><h3>Контурная пластика подбородка, углов челюсти и скул<span class="lead2">Чёткий овал лица и выраженные скулы без операции.</span></h3><span class="from">от 14 000 ₽</span><span class="plus" aria-hidden="true"></span></button>
         <div class="body" id="p1"><ul class="rows">
             <li><span>Repart Elegance Hard, 1 мл</span><b>14 000 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-contour.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p2"><h3>Биоревитализация и мезотерапия<span class="lead2">Увлажнение, плотность и сияние кожи изнутри.</span></h3><span class="from">от 6 000 ₽</span><span class="plus" aria-hidden="true"></span></button>
@@ -455,7 +461,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>Jufora Zinc (жидкие нити), 2 мл</span><b>8 000 ₽</b></li>
             <li><span>IQ Lift, 2 мл</span><b>6 000 ₽</b></li>
             <li><span>MD Complex DMAE, 2 мл</span><b>8 000 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-biorev.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p3"><h3>PDRN-терапия<span class="lead2">Препараты полинуклеотидов для восстановления и обновления кожи.</span></h3><span class="from">от 15 000 ₽</span><span class="plus" aria-hidden="true"></span></button>
@@ -465,7 +471,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>Nucleoform, 2 мл</span><b>16 000 ₽</b></li>
             <li><span>Nucleoform Rich, 2 мл</span><b>17 000 ₽</b></li>
             <li><span>Bellarti Nucleo, 2 мл</span><b>16 000 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-pdrn.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p4"><h3>Коллагеностимуляция<span class="lead2">Запускает выработку собственного коллагена: кожа плотнее, контуры чётче.</span></h3><span class="from">от 16 000 ₽</span><span class="plus" aria-hidden="true"></span></button>
@@ -474,7 +480,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>Collost Micro, 5 мл</span><b>16 000 ₽</b></li>
             <li><span>Collost Micro на плазме, 5 мл</span><b>18 000 ₽</b></li>
             <li><span>Nithya, 5 мл</span><b>18 000 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-collagen.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p5"><h3>Глобальный лифтинг<span class="lead2">Подтяжка и уплотнение кожи без разрезов.</span></h3><span class="from">от 28 000 ₽</span><span class="plus" aria-hidden="true"></span></button>
@@ -483,7 +489,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>Radiesse, 1,5 мл</span><b>28 000 ₽</b></li>
             <li><span>Radiesse, 3 мл</span><b>41 000 ₽</b></li>
             <li><span>Нити Cog Visage</span><b>от 30 000 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-lifting.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p6"><h3>Плазмотерапия<span class="lead2">Омоложение собственной плазмой крови.</span></h3><span class="from">от 4 000 ₽</span><span class="plus" aria-hidden="true"></span></button>
@@ -491,7 +497,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>1 пробирка</span><b>4 000 ₽</b></li>
             <li><span>2 пробирки</span><b>7 000 ₽</b></li>
             <li><span>PRP + 1 пробирка</span><b>6 000 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-plasma.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p7"><h3>Липолитики<span class="lead2">Коррекция локальных жировых отложений на лице и теле.</span></h3><span class="from">от 5 000 ₽</span><span class="plus" aria-hidden="true"></span></button>
@@ -499,7 +505,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>Slim Lift — реконструкционный коктейль для лица, 6 мл</span><b>8 000 ₽</b></li>
             <li><span>Magistral, 5 мл</span><b>5 000 ₽</b></li>
             <li><span>Sculpt Veronica — липолитик для тела, 5 мл</span><b>7 000 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-lipo.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p8"><h3>Лечение выпадения волос<span class="lead2">Инъекционные протоколы для укрепления и роста волос.</span></h3><span class="from">от 6 000 ₽</span><span class="plus" aria-hidden="true"></span></button>
@@ -507,7 +513,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>MD Complex Hair, 2 мл</span><b>7 000 ₽</b></li>
             <li><span>Curasen, 2 мл</span><b>14 000 ₽</b></li>
             <li><span>Skymas Anagen, 2 мл</span><b>6 000 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-hair.html">Подробнее о процедуре →</a></div>
       </div>
       <div class="svc">
         <button aria-expanded="false" aria-controls="p9"><h3>Чистки, пилинги и уход<span class="lead2">Очищение, обновление и выравнивание тона кожи.</span></h3><span class="from">от 400 ₽</span><span class="plus" aria-hidden="true"></span></button>
@@ -536,7 +542,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
             <li><span>pH Formula — комплекс Mela</span><b>6 000 ₽</b></li>
             <li><span>Безынъекционная биоревитализация, 1 мл</span><b>4 000 ₽</b></li>
             <li><span>Удаление образований (папилломы), за 1 шт.</span><b>400 ₽</b></li>
-        </ul></div>
+        </ul><a class="more" href="usluga-care.html">Подробнее о процедуре →</a></div>
       </div>
     </div>
     <div class="shop" data-fade>
@@ -550,8 +556,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
     <div class="head">
       <div>
         <h2 id="team-h" class="h2" data-split>Врачи и косметологи</h2>
-        <p class="sub" data-fade>К каждому специалисту можно записаться напрямую.</p>
-      </div>
+        <p class="sub" data-fade>К каждому специалисту можно записаться напрямую.</p> </div> <a class="btn btn-ghost" href="vrachi.html" data-fade>Все врачи</a>
     </div>
     <div class="team-grid">
       <article class="doc">
@@ -561,7 +566,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
         </a>
         <h3>Дарья Лапай</h3>
         <p class="role">Косметолог-эстетист, директор</p>
-        <ul><li>Сибирский межрегиональный учебно-методический центр «Косметология», 2013</li><li>Медицинская сестра, ТБМК, 2014</li><li>Профпереподготовка «Косметология» на базе РУДН, 2015</li><li class="sig">Авторская программа «Лечение акне»</li></ul>
+        <ul><li>Сибирский межрегиональный учебно-методический центр «Косметология», 2013</li><li>Медицинская сестра, ТБМК, 2014</li><li>Профпереподготовка «Косметология» на базе РУДН, 2015</li><li class="sig">Авторская программа «Лечение акне»</li></ul><a class="more" href="vrach-darya-lapay.html">Страница врача →</a>
       </article>
       <article class="doc">
         <a class="ph" href="https://dikidi.net/ru/profile/beauty_bluess_583429/master/1336429" target="_blank" rel="noopener" aria-label="Записаться: Ирина Вирясова">
@@ -570,7 +575,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
         </a>
         <h3>Ирина Вирясова</h3>
         <p class="role">Врач дерматокосметолог, ведущий косметолог</p>
-        <ul><li>Высшее образование СибГМУ, лечебный факультет</li><li>Интернатура по дерматовенерологии, СибГМУ</li><li>Переподготовка: врач-косметолог, СибГМУ</li><li class="sig">Авторская техника «Глобальное омоложение»</li></ul>
+        <ul><li>Высшее образование СибГМУ, лечебный факультет</li><li>Интернатура по дерматовенерологии, СибГМУ</li><li>Переподготовка: врач-косметолог, СибГМУ</li><li class="sig">Авторская техника «Глобальное омоложение»</li></ul><a class="more" href="vrach-irina-viryasova.html">Страница врача →</a>
       </article>
       <article class="doc">
         <a class="ph" href="https://dikidi.net/ru/profile/beauty_bluess_583429/master/4506108" target="_blank" rel="noopener" aria-label="Записаться: Кирилл Вирясов">
@@ -579,7 +584,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
         </a>
         <h3>Кирилл Вирясов</h3>
         <p class="role">Врач гинеколог-хирург, косметолог-инъекционист</p>
-        <ul><li>Высшее медицинское образование</li><li>Врач гинеколог-хирург</li><li>Направление — инъекционная косметология</li><li class="sig">Косметолог-инъекционист</li></ul>
+        <ul><li>Высшее медицинское образование — СибГМУ, лечебный факультет</li><li>Ординатура по акушерству и гинекологии</li><li>Врач гинеколог-хирург</li><li>Направление — инъекционная косметология</li><li class="sig">Косметолог-инъекционист</li></ul><a class="more" href="vrach-kirill-viryasov.html">Страница врача →</a>
       </article>
       <article class="doc">
         <a class="ph" href="https://dikidi.net/ru/profile/beauty_bluess_583429/master/1336437" target="_blank" rel="noopener" aria-label="Записаться: Алина Чеботарь">
@@ -588,7 +593,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
         </a>
         <h3>Алина Чеботарь</h3>
         <p class="role">Врач дерматокосметолог</p>
-        <ul><li>Высшее образование СибГМУ, лечебный факультет</li><li>Ординатура по дерматовенерологии, СибГМУ</li><li>Переподготовка: врач-косметолог, СибГМУ</li><li class="sig">Авторская техника «Premium Lips» — увеличение губ</li></ul>
+        <ul><li>Высшее образование СибГМУ, лечебный факультет</li><li>Ординатура по дерматовенерологии, СибГМУ</li><li>Переподготовка: врач-косметолог, СибГМУ</li><li class="sig">Авторская техника «Premium Lips» — увеличение губ</li></ul><a class="more" href="vrach-alina-chebotar.html">Страница врача →</a>
       </article>
     </div>
   </div>
@@ -686,13 +691,13 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
       <figcaption><b>Овал лица</b><span>липолитик Slim Lift</span></figcaption>
     </figure>
   </div>
-  <div class="wrap"><div class="bar" aria-hidden="true"><i></i></div><p class="note">Результат индивидуален и зависит от исходного состояния кожи.</p></div>
+  <div class="wrap"><div class="bar" aria-hidden="true"><i></i></div><p class="note">Результат индивидуален и зависит от исходного состояния кожи. <a href="rezultaty.html">Все результаты до и после →</a></p></div>
 </section>
 <section id="video" class="vworks" data-vworks aria-labelledby="vw-h">
   <div class="wrap">
-    <div class="head"><div><h2 id="vw-h" class="h2" data-split>Работы врачей</h2><p class="sub" data-fade>Короткие видео с процедур в нашем кабинете. Листайте вправо, нажмите на видео, чтобы включить звук.</p></div><div class="vw-ctrl" data-fade><span class="vw-cnt" aria-live="polite">1 / 8</span><button type="button" class="glass vw-prev" aria-label="Предыдущее видео"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" class="glass vw-next" aria-label="Следующее видео"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+    <div class="head"><div><h2 id="vw-h" class="h2" data-split>Работы врачей</h2><p class="sub" data-fade>Короткие видео с процедур в нашем кабинете. Листайте вправо.</p></div><div class="vw-ctrl" data-fade><span class="vw-cnt" aria-live="polite">1 / 8</span><button type="button" class="glass vw-prev" aria-label="Предыдущее видео"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" class="glass vw-next" aria-label="Следующее видео"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
   </div>
-  <div class="vw-car" tabindex="0" aria-label="Карусель видео с процедур"><figure class="vw-item"><video src="assets/video/work-01.mp4" poster="assets/video/work-01.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 1 из 8"></video><button type="button" class="vw-snd" aria-label="Включить звук" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="i-off" d="M22 9l-6 6M16 9l6 6"/><path class="i-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></figure><figure class="vw-item"><video src="assets/video/work-02.mp4" poster="assets/video/work-02.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 2 из 8"></video><button type="button" class="vw-snd" aria-label="Включить звук" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="i-off" d="M22 9l-6 6M16 9l6 6"/><path class="i-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></figure><figure class="vw-item"><video src="assets/video/work-03.mp4" poster="assets/video/work-03.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 3 из 8"></video><button type="button" class="vw-snd" aria-label="Включить звук" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="i-off" d="M22 9l-6 6M16 9l6 6"/><path class="i-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></figure><figure class="vw-item"><video src="assets/video/work-04.mp4" poster="assets/video/work-04.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 4 из 8"></video><button type="button" class="vw-snd" aria-label="Включить звук" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="i-off" d="M22 9l-6 6M16 9l6 6"/><path class="i-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></figure><figure class="vw-item"><video src="assets/video/work-05.mp4" poster="assets/video/work-05.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 5 из 8"></video><button type="button" class="vw-snd" aria-label="Включить звук" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="i-off" d="M22 9l-6 6M16 9l6 6"/><path class="i-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></figure><figure class="vw-item"><video src="assets/video/work-06.mp4" poster="assets/video/work-06.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 6 из 8"></video><button type="button" class="vw-snd" aria-label="Включить звук" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="i-off" d="M22 9l-6 6M16 9l6 6"/><path class="i-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></figure><figure class="vw-item"><video src="assets/video/work-07.mp4" poster="assets/video/work-07.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 7 из 8"></video><button type="button" class="vw-snd" aria-label="Включить звук" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="i-off" d="M22 9l-6 6M16 9l6 6"/><path class="i-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></figure><figure class="vw-item"><video src="assets/video/work-08.mp4" poster="assets/video/work-08.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 8 из 8"></video><button type="button" class="vw-snd" aria-label="Включить звук" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="i-off" d="M22 9l-6 6M16 9l6 6"/><path class="i-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></figure></div>
+  <div class="vw-car" tabindex="0" aria-label="Карусель видео с процедур"><figure class="vw-item"><video src="assets/video/work-01.mp4" poster="assets/video/work-01.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 1 из 8"></video></figure><figure class="vw-item"><video src="assets/video/work-02.mp4" poster="assets/video/work-02.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 2 из 8"></video></figure><figure class="vw-item"><video src="assets/video/work-03.mp4" poster="assets/video/work-03.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 3 из 8"></video></figure><figure class="vw-item"><video src="assets/video/work-04.mp4" poster="assets/video/work-04.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 4 из 8"></video></figure><figure class="vw-item"><video src="assets/video/work-05.mp4" poster="assets/video/work-05.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 5 из 8"></video></figure><figure class="vw-item"><video src="assets/video/work-06.mp4" poster="assets/video/work-06.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 6 из 8"></video></figure><figure class="vw-item"><video src="assets/video/work-07.mp4" poster="assets/video/work-07.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 7 из 8"></video></figure><figure class="vw-item"><video src="assets/video/work-08.mp4" poster="assets/video/work-08.jpg" muted loop playsinline preload="none" aria-label="Видео с процедуры 8 из 8"></video></figure></div>
   <div class="wrap"><div class="vw-bar" aria-hidden="true"><i></i></div></div>
 </section>
 
@@ -739,7 +744,7 @@ footer .disc{font-family:var(--serif);font-size:1.25rem;color:var(--gold-soft);m
       <p style="margin-top:12px">Кабинет врачебной косметологии<br>Томск, проспект Фрунзе, 96А, кабинет 5<br><a href="tel:+79138890939" style="text-decoration:none">+7 (913) 889-09-39</a><br><a href="https://www.instagram.com/beauty_bluess/" target="_blank" rel="noopener" style="text-decoration:none">Instagram*: @beauty_bluess</a></p>
       <p style="margin-top:8px">* Instagram принадлежит компании Meta, признанной экстремистской и запрещённой в РФ.</p>
     </div>
-    <p class="disc">Имеются противопоказания. Необходима консультация специалиста.</p>
+    <nav class="fnav" aria-label="Страницы сайта"><a href="uslugi.html">Услуги и цены</a><a href="vrachi.html">Врачи</a><a href="rezultaty.html">Результаты</a><a href="stati.html">Статьи</a><a href="o-kabinete.html">О кабинете</a><a href="kontakty.html">Контакты</a></nav> <p class="disc">Имеются противопоказания. Необходима консультация специалиста.</p>
   </div>
 </footer>
 </div></div>
