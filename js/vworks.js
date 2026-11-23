@@ -3,7 +3,7 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.querySelectorAll('[data-vworks]').forEach((sec) => {
     const car = sec.querySelector('.vw-car'); if (!car) return;
-    const items = [...car.querySelectorAll('.vw-item')]; const vids = items.map((it) => it.querySelector('video'));
+    const items = [...car.querySelectorAll('.vw-item')]; const vids = items.map((it) => it.querySelector('video')).filter(Boolean);
     const prev = sec.querySelector('.vw-prev'), next = sec.querySelector('.vw-next'), cnt = sec.querySelector('.vw-cnt'), bar = sec.querySelector('.vw-bar');
 
     /* листание */
